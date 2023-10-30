@@ -24,7 +24,7 @@ function addSlideIn(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('slide-in');
-    } else { // this else part is not compulsory
+    } else { 
       entry.target.classList.remove('slide-in');
     }
   });
