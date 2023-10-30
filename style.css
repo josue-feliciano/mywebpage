@@ -203,3 +203,92 @@ input:checked + .slider:before {
 .mode-status {
   color:rgb(3, 255, 58)
 }
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 3rem;
+  color: rgb(3, 255, 58);
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: rgb(3, 255, 58)
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: steelblue;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+.div-main {
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 100px;
+}
+
+.div-main div {
+  height: 30px;
+}
+
+.div-main .project-1 {
+  width: 400px;
+  background-color: greenyellow;
+  order: 1;
+  flex-shrink: 1;
+}
+.div-main .project-2 {
+  width: 400px;
+  background-color: rgb(234, 254, 3);
+  order: 2;
+}
+.div-main .project-3 {
+  width: 400px;
+  background-color: rgb(254, 3, 3);
+  order: 3;
+}

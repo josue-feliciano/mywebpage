@@ -1,0 +1,371 @@
+.header {
+    max-width: 700px;
+    margin: auto;
+    font-family: "Dancing Script", cursive;
+    color: rgb(3, 255, 58);
+  }
+  
+  .form {
+    border-radius: 7%;
+    border-color: silver;
+    border-style: groove;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 125px;
+    width: 270px;
+    padding: 3px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: silver;
+    font-size: large;
+  }
+  
+  .navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 28px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .navbar a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(3, 255, 58);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover::before {
+    width: 100%;
+    background-color: yellow;
+  }
+  
+  .img:hover {
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+  
+  .h2 {
+    font-family: "Dancing Script", cursive;
+    margin-left: 900px;
+    margin-top: 30px;
+    color: rgb(3, 255, 58);
+    font-size: 30px;
+  }
+  
+  .li {
+    margin-left: 900px;
+    margin-top: 30px;
+    border-radius: 7%;
+    width: 270px;
+    padding: 3px;
+    color: rgb(3, 255, 58);
+    border-color: silver;
+    border-style: groove;
+  }
+  
+  .h3 {
+    font-family: "Dancing Script", cursive;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: rgb(3, 255, 58);
+    font-size: 40px;
+  }
+  
+ 
+  
+  .img {
+    border-radius: 7%;
+    width: 270px;
+    padding: 3px;
+    border-color: silver;
+    border-style: dotted;
+  }
+  
+  .flexbox-container {
+    display: flex;
+    background-image: url(https://marvel-b1-cdn.bc0a.com/f00000000160363/www.matc.edu/_files/img/program-page/it_web_and_software_developer_degree1.png);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .flebox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid purple;
+    background-color: white;
+  }
+  
+  .flexbox-item-1 {
+    min-height: 100px;
+    color: purple;
+  }
+  
+  .flexbox-item-2 {
+    min-height: 200px;
+    border-color: rgb(192, 6, 253);
+    border-style: dotted;
+  }
+  
+  .flexbox-item-3 {
+    min-height: 300px;
+  }/*# sourceMappingURL=style.css.map */
+  
+  .dark-mode {
+    background-color: #333;
+    color: #eff0f6;
+    transition: all 0.4s ease-in;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.63rem;
+    width: 1.63rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+  
+  .mode-status {
+    color:rgb(3, 255, 58)
+  }
+  
+  
+  .darkmode {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    font-size: 3rem;
+    color: rgb(3, 255, 58);
+  }
+  
+  .subheading {
+    font-size: 1.5rem;
+    color: rgb(3, 255, 58)
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+  }
+  
+  .item:not(:first-child) {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .item__content {
+    background-color: steelblue;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 7rem;
+    border-radius: 7px;
+  }
+  
+  .item > p {
+    text-align: center;
+  }
+  
+  .left {
+    transform-origin: left center;
+    transform: translateX(-50%);
+  }
+  
+  .right {
+    transform-origin: right center;
+    transform: translateX(50%);
+  }
+  
+  .slide-in {
+    opacity: 1 !important;
+    transform: translateX(0);
+  }
+
+  .dark-mode {
+    background-color: #333;
+    color: #070707;
+    transition: all 0.4s ease-in;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.63rem;
+    width: 1.63rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+  
+  .mode-status {
+    color:rgb(3, 255, 58)
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+  
+.card {
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url('https://i.gadgets360cdn.com/large/google_calculator_story_1485247846019.jpg');
+}
+
+.card-2 {
+    background-image: url('https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698537600&semt=ais');
+}
+
+.card-3 {
+    background-image: url('https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698537600&semt=ais');
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
