@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 700px;
+    margin: auto;
+    font-family: "Dancing Script", cursive;
+    color: rgb(3, 255, 58);
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 28px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .navbar a {
+    position: relative;
+    font-size: 18px;
+    color: rgb(3, 255, 58);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover::before {
+    width: 100%;
+    background-color: yellow;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+  
+.app {
+    /* background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg'); */
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    border-style: groove;
+}
+.app h1{
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+
+}
+
+.quiz {
+    padding: 20px 0;
+}
+  
+.quiz h2{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+.correct{
+    background-color: green;
+    
+}
+  
+.incorrect{
+    background: red;
+}
+
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}

@@ -40,7 +40,7 @@ const form = document.getElementById('contactForm')
 const submitButton = document.querySelector('.submit')
 const successMessage = document.getElementById('form-submitted-msg')
 
-const formElements = [ ...form.elements ]
+const formElements = [...form.elements ]
 
 const allInputsValid = () => {
   const valid = formElements.every((element) => {
